@@ -1,0 +1,30 @@
+{
+  "name": "clean-bandits/db-query",
+  "description": "Simple PHP OOP library for creating database queries",
+  "keywords": [
+    "php",
+    "oop",
+    "db",
+    "query",
+    "dal"
+  ],
+  "homepage": "https://github.com/CleanBandits/DbQuery",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Clean Bandits"
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "CleanBandits\\DbQuery\\": "src/"
+    },
+    "files": [
+      "src/I18n/format.php"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+# Ide's
+.idea
+.vscode
+.settings/
+.classpath
+.project
+nbproject
