@@ -22,9 +22,6 @@
   "autoload": {
     "psr-4": {
       "CleanBandits\\DbQuery\\": "src/"
-    },
-    "files": [
-      "src/I18n/format.php"
-    ]
+    }
   }
 }
