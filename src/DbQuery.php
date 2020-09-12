@@ -3,9 +3,9 @@
 
 namespace CleanBandits\DbQuery;
 
-use CleanBandits\DbQuery\Filters\Filter;
-use CleanBandits\DbQuery\Order\Order;
-use CleanBandits\DbQuery\Page\Page;
+use CleanBandits\DbQuery\Filters2\Filter;
+use CleanBandits\DbQuery\Order2\Order;
+use CleanBandits\DbQuery\Page2\Page;
 
 
 class DbQuery

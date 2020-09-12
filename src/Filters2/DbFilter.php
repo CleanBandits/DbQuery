@@ -1,6 +1,6 @@
 <?php
 
-namespace CleanBandits\DbQuery\Filters;
+namespace CleanBandits\DbQuery\Filters2;
 
 class DbFilter implements Filter
 {
