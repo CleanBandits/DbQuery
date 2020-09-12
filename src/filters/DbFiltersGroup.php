@@ -29,20 +29,20 @@ class DbFiltersGroup implements Filter
 
     /**
      * @param Filter[]|DbFiltersGroup[] $filters
-     * @return DbFiltersGroup
+     * @return Filter
      */
-    public static function constructAndGroup(array $filters): self
+    public static function constructAndGroup(array $filters): Filter
     {
-        return new self($filters, 'AND');
+        return new static($filters, 'AND');
     }
 
     /**
      * @param Filter[]|DbFiltersGroup[] $filters
-     * @return DbFiltersGroup
+     * @return Filter
      */
-    public static function constructOrGroup(array $filters): self
+    public static function constructOrGroup(array $filters): Filter
     {
-        return new self($filters, 'OR');
+        return new static($filters, 'OR');
     }
 
     public function sql(): string

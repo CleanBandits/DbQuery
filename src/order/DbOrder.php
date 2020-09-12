@@ -18,9 +18,9 @@ class DbOrder implements Order
         $this->ordering = $columnOrdering;
     }
 
-    public static function fromSingleColumn(string $column, string $direction)
+    public static function fromSingleColumn(string $column, string $direction): Order
     {
-        return new self([$column => $direction]);
+        return new static([$column => $direction]);
     }
 
     public function orderingFormatted(): string

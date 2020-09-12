@@ -37,66 +37,66 @@ class DbFilter implements Filter
      * DbFilter constructor.
      * @param string $column
      * @param string|int|array $value
-     * @return DbFilter
+     * @return Filter
      */
-    public static function constructLike(string $column, $value): self
+    public static function constructLike(string $column, $value): Filter
     {
-        return new self($column, $value, DbFilterType::Like);
+        return new static($column, $value, DbFilterType::Like);
     }
 
     /**
      * DbFilter constructor.
      * @param string $column
      * @param string|int|array $value
-     * @return DbFilter
+     * @return Filter
      */
-    public static function constructNotLike(string $column, $value): self
+    public static function constructNotLike(string $column, $value): Filter
     {
-        return new self($column, $value, DbFilterType::NotLike);
+        return new static($column, $value, DbFilterType::NotLike);
     }
 
     /**
      * DbFilter constructor.
      * @param string $column
      * @param string|int|array $value
-     * @return DbFilter
+     * @return Filter
      */
-    public static function constructEquals(string $column, $value): self
+    public static function constructEquals(string $column, $value): Filter
     {
-        return new self($column, $value, DbFilterType::Equals);
+        return new static($column, $value, DbFilterType::Equals);
     }
 
     /**
      * DbFilter constructor.
      * @param string $column
      * @param string|int|array $value
-     * @return DbFilter
+     * @return Filter
      */
-    public static function constructNotEquals(string $column, $value): self
+    public static function constructNotEquals(string $column, $value): Filter
     {
-        return new self($column, $value, DbFilterType::NotEquals);
+        return new static($column, $value, DbFilterType::NotEquals);
     }
 
     /**
      * DbFilter constructor.
      * @param string $column
      * @param string|int|array $value
-     * @return DbFilter
+     * @return Filter
      */
-    public static function constructIn(string $column, $value): self
+    public static function constructIn(string $column, $value): Filter
     {
-        return new self($column, $value, DbFilterType::In);
+        return new static($column, $value, DbFilterType::In);
     }
 
     /**
      * DbFilter constructor.
      * @param string $column
      * @param string|int|array $value
-     * @return DbFilter
+     * @return Filter
      */
-    public static function constructNotIn(string $column, $value): self
+    public static function constructNotIn(string $column, $value): Filter
     {
-        return new self($column, $value, DbFilterType::NotEquals);
+        return new static($column, $value, DbFilterType::NotEquals);
     }
 
     public function sql(): string

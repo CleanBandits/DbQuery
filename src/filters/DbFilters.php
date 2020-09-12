@@ -15,14 +15,14 @@ class DbFilters implements Filter
         $this->filtersGroup = $filtersGroup;
     }
 
-    public static function constructFromGroup(DbFiltersGroup $filtersGroup): self
+    public static function constructFromGroup(DbFiltersGroup $filtersGroup): Filter
     {
-        return new self($filtersGroup);
+        return new static($filtersGroup);
     }
 
-    public static function constructFromFilter(Filter $dbFilter): self
+    public static function constructFromFilter(Filter $dbFilter): Filter
     {
-        return new self(DbFiltersGroup::constructAndGroup([$dbFilter]));
+        return new static(DbFiltersGroup::constructAndGroup([$dbFilter]));
     }
 
     public function sql(): string
