@@ -1,7 +1,7 @@
 <?php
 
 
-namespace CleanBandits\DbQuery\page2;
+namespace CleanBandits\DbQuery\Page;
 
 
 interface Page

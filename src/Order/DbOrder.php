@@ -1,6 +1,6 @@
 <?php
 
-namespace CleanBandits\DbQuery\order2;
+namespace CleanBandits\DbQuery\Order;
 
 class DbOrder implements Order
 {

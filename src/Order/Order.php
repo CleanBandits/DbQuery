@@ -1,7 +1,7 @@
 <?php
 
 
-namespace CleanBandits\DbQuery\order2;
+namespace CleanBandits\DbQuery\Order;
 
 
 interface Order

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace CleanBandits\DbQuery\filters2;
+namespace CleanBandits\DbQuery\Filters;
 
 
 class DbFiltersGroup implements Filter
