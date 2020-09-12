@@ -10,12 +10,12 @@ class DbFilters implements Filter
      */
     private $filtersGroup;
 
-    public function __construct(DbFiltersGroup $filtersGroup)
+    public function __construct(Filter $filtersGroup)
     {
         $this->filtersGroup = $filtersGroup;
     }
 
-    public static function constructFromGroup(DbFiltersGroup $filtersGroup): Filter
+    public static function constructFromGroup(Filter $filtersGroup): Filter
     {
         return new static($filtersGroup);
     }
