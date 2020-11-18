@@ -28,7 +28,7 @@
         "codeception/module-asserts": "^1.0.0"
     },
     "scripts": {
-        "test": ".\\vendor\\bin\\codecept.bat run",
+        "test": "codecept run",
         "unit": "phpunit"
     }
 
