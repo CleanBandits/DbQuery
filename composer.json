@@ -1,26 +1,35 @@
 {
-  "name": "clean-bandits/db-query",
-  "description": "Simple PHP OOP library for creating database queries",
-  "keywords": [
-    "php",
-    "oop",
-    "db",
-    "query",
-    "dal"
-  ],
-  "homepage": "https://github.com/CleanBandits/DbQuery",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Clean Bandits"
+    "name": "clean-bandits/db-query",
+    "description": "Simple PHP OOP library for creating database queries",
+    "keywords": [
+        "php",
+        "oop",
+        "db",
+        "query",
+        "dal"
+    ],
+    "homepage": "https://github.com/CleanBandits/DbQuery",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clean Bandits"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CleanBandits\\DbQuery\\": "src/"
+        }
+    },
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-asserts": "^1.0.0"
+    },
+    "scripts": {
+        "test": "codecept run",
+        "unit": "phpunit"
     }
-  ],
-  "require": {
-    "php": ">=7.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "CleanBandits\\DbQuery\\": "src/"
-    }
-  }
+
 }
